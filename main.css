@@ -1,0 +1,448 @@
+* {
+    transition: background-color 0.5s ease;
+}
+
+:root {
+    color-scheme: light dark;
+}
+
+.theme {
+    color-scheme: dark;
+}
+
+
+h1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 80px;
+    color: light-dark(black,#eeeeee) ;
+    font-family: 'Michroma', sans-serif;
+}
+
+html {
+    scroll-padding-top: 85px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: light-dark(#eeeeee, #111111) ;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+h2{
+    font-family: 'Michroma', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color:light-dark(black, white);
+    margin: 100px 0px 50px 0px;
+    font-weight: bolder;
+}
+
+a {
+    color:cornflowerblue;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+.profileContain{
+    text-align: right;
+    width: 100%;
+}
+
+.profileImg {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width:600px;
+    height: 600px;
+    display: inline-block;
+}
+
+.navBar{
+    position: sticky;
+    top: 0px;
+    margin-right: 10px;
+    background-color: light-dark(#eeeeee, #111111) ;
+    padding: 5px 0px;
+    display: flex;
+
+
+}
+.navSection {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.navLinks{
+    list-style-type: none;
+}
+
+.nLink{
+    display: inline;
+    margin-right: 20px;
+    font-size: 32px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: auto;
+    justify-items: center;
+}
+
+
+
+.aboutMeSec {
+    width: 100%;
+    height: 100%;
+    flex: auto;
+    align-items: end;
+
+}
+
+.secSection{
+    width: 80%;
+    padding: 0px 10px;
+    background-color: light-dark(rgba(255, 255, 255, 0.3),  rgba(51, 51, 51, 0.3));
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+h3.aboutHeading {
+    margin: 0px;
+    padding: 30px 0px;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    color: light-dark(black, white);
+    font-size: 35px;
+    font-family: 'Outfit', sans-serif;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+h4 {
+    margin: 10px 0px 10px 0px;
+    padding: 0px 10px;
+    color: light-dark(rgba(51,51,51, 0.7),darkgray);
+    font-size: 20px;
+}
+
+h4.year {
+    margin-bottom: 20px;
+}
+
+.buttonDiv {
+    margin-top: 30px;
+    width: 100%;
+    flex: auto;
+    justify-items: center;
+    text-align: center;
+}
+
+.projectButton, .infoButton {
+    border: 1px light-dark(rgba(51,51,51, 0.6), lightgray) solid;
+    text-align: center;
+    font-size: 20px;
+    color: light-dark(rgba(51,51,51, 0.9), lightgray);
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-family: 'Outfit', sans-serif;
+    display: inline-block;
+}
+
+
+.projectButton:hover, .infoButton:hover {
+    background-color:light-dark(rgba(211,211,211,0.7), rgba(51, 51, 51, 0.7));
+    color:light-dark(rgba(0,0,0, 0.8), white);
+    cursor: pointer;
+}
+
+
+.aboutText {
+    color: light-dark(rgba(51, 51, 51, 0.8) , lightgray);
+    padding: 0px 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.project {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+}
+
+.projectText {
+    color:light-dark(black, white);
+    padding: 0px 10px;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.projectImg {
+    max-width: 90%;
+    max-height: 400px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+.sProBtnDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#sProBtn {
+    margin-top: 20px;
+    border: 1px light-dark(rgba(51,51,51, 0.6), lightgray) solid;
+    text-align: center;
+    font-size: 25px;
+    color: light-dark(rgba(51,51,51, 0.9), lightgray);
+    width: 35%;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-family: 'Outfit', sans-serif;
+    display: inline-block;
+
+}
+
+#sProBtn:hover {
+    background-color:light-dark(rgba(211,211,211,0.7), rgba(51, 51, 51, 0.7));
+    color:light-dark(rgba(0,0,0, 0.8), white);
+    cursor: pointer;
+}
+
+.smallProjectContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 50%;
+}
+
+.smallProject {
+    padding: 0px 10px;
+    max-height: 100%;
+}
+
+.innerContainer {
+    flex: auto;
+    justify-items: center;
+    width: 100%;
+}
+
+.sProjectImg {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+h6 {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 20%;
+}
+
+.smallProText {
+    font-size:20px;
+    width: 80%;
+}
+
+.textContainer {
+    height: 105px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media {
+    min-height: 45%;
+    position: relative;
+}
+
+video {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+    max-width: 75px;
+}
+
+.contactContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 30px;
+}
+
+.contactText {
+    color:light-dark(black,white);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.iconImg {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.popupdiv {
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlay {
+    width: 90%;
+    height: 90%;
+    border-radius: 8px;
+    background-color: light-dark(rgb(242, 242, 242), rgb(14, 13, 13));
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+
+.overlayx {
+    color: light-dark(black, white);
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.xsvg {
+    stroke: light-dark(rgb(79, 78, 78), darkgray);
+    stroke-width: 10px;
+}
+
+.xsvg:hover {
+    stroke: light-dark(rgb(119, 111, 111), rgb(111, 109, 109));
+}
+
+.headingContainer{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+
+}
+
+.overlayText {
+    font-family: 'Outfit', sans-serif;
+    color: light-dark(black,white);
+    font-size: 18px;
+    padding: 0px 30px;
+}
+
+h3.overlayTitle {
+    font-size: 40px;    
+    margin: auto;
+}
+
+
+h5 {
+    padding-left: 30px;
+    font-size:25px;
+    font-family: 'Outfit', sans-serif;
+    color: light-dark(black, white);
+    margin: 15px 0px;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid light-dark(black, white); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .08em; /* Adjust as needed */
+  animation: 
+    typing 3.0s steps(40, end),
+    blink-caret .75s step-end 4;
+    animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: light-dark(black, white); }
+}
+
+@keyframes scroll-watcher {
+  to {
+    opacity: 100%;
+    scale: 1 1;
+  }
+}
+
+#icon1, #icon2 {
+    cursor: pointer;
+}
+
+.iconSection {
+    margin-left: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    height: 100%;
+}
+
+
+.hide {
+    display: none;
+}
